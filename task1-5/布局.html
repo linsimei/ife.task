@@ -1,0 +1,365 @@
+﻿<!DOTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>百度布局练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1300px;
+            background-color: #cccccc;
+        }
+
+        .top {
+            width: 100%;
+            background: black;
+        }
+       
+
+        .wrap .top ul {
+            width: 1300px;
+            margin-right: 10px;
+            text-align: right;
+            display: inline;
+            text-indent:150x;          
+            float: left;
+        }
+
+        .wrap .top li {
+            list-style-type: none;
+            float: left;
+            padding: 5px;
+            line-height: 20px;
+            color: white;
+           
+        }
+
+        .link {
+            color: #708090;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .main {
+           
+            padding: 10px;
+        }
+        .left {
+            width: 830px;
+             float: left;
+        }
+        .box {
+            width: 800px;
+            box-shadow: 0px 8px 8px 0px #888888;
+            background: white;
+            margin: 10px;
+            border: 1px solid #CCC;
+            padding: 10px;
+        }
+
+        h1 {
+            padding: 10px;
+        }
+
+        h2 {
+            padding: 5px;
+        }
+
+        span {
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            line-height: 1.8em;
+        }
+
+        .photo {
+            width: 750px;
+        }
+
+        .list {
+            width: 100px;
+            height: 110px;
+            margin: 10px;
+            padding: 10px;
+            float: left;
+            list-style: none;
+            border: 1px solid #cccccc;
+        }
+
+        .photo:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+
+        .photo1 {
+            width: 90px;
+            height: 90px;
+            margin-left: 10px;
+        }
+
+
+        table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+
+            table th, td {
+                border: 1px solid #cccccc;
+                padding: 5px;
+            }
+
+        .project li {
+            padding: 10px;
+        }
+
+        th {
+            background: black;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #last {
+            background: #cccccc;
+            font-weight: bold;
+        }
+       #right{
+           float: right ;
+           width:400px;
+           border: 1px solid #a9a9a9;
+           margin: 15px ;
+           background: white;
+           padding: 8px;
+           line-height: 2em;
+          
+        }
+       .main:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+        }
+       .content { 
+            display: inline-block;          
+           width: 120px;
+           height: 20px;
+           text-align: right;
+           margin :10px;
+          
+       }
+          .input{
+           display: inline-block;
+           width: 180px;
+             height: 20px;
+           text-align: left;
+          
+       }
+          .btn {
+              width: 380px;
+              height: 40px;
+              background: blue;
+              color: white;
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+              border-radius:10px
+              
+             
+          }
+          #submit {
+              width: 380px;
+               margin: 10px auto;
+          }
+          .foot {
+              width: 1300px;
+              height: 100px;
+              font-size: 12px;
+              color: white;
+              text-align: center;
+              background: black;
+          }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <img id="logo" src="baodu.png"/>
+            <ul>
+                <li>导航链接一</li>
+                <li>导航链接二</li>
+                <li>导航链接三</li>
+                <li class="link">导航链接四</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="main">
+            <div class="left">
+
+                <div class="box">
+                    <div style="margin: 0 auto;">
+                        <h1>文章一级标题</h1>
+                    </div>
+                    <h2>文章二级标题</h2><br />
+                    <span>文章作者&nbsp;文章发表时间</span><br /><br />
+                    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了</p>
+                    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了</p>
+                    <p>
+                        这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了
+                    </p>
+                    <img src="zhaopian.png" />
+                    <p>
+                        这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了
+                    </p>
+                </div>
+
+
+                <div class="box">
+                    <h1>另一篇文章一级标题</h1>
+                    <h2>文章二级标题</h2><br />
+                    <span>文章作者&nbsp;文章发表时间</span><br /><br />
+                    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了</p>
+                    <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了</p>
+                    <p>
+                        这是一个很长很长的段落,<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,换行了
+                    </p>
+                    <img src="zhaopian.png" />
+                    <ul class="project">
+
+                        <li>列表项目一</li>
+
+                        <li>列表项目二</li>
+
+                        <li>列表项目三</li>
+
+                        <li>列表项目四</li>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <h1>图片</h1>
+                    <ul class="photo">
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                        <li class="list"><span>好看的图片</span><img class="photo1" src="zhaopian.png" /></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h1>最后一篇文章一级标题</h1>
+                    <h2>文章二级标题</h2><br />
+                    <span>文章作者&nbsp;文章发表时间</span><br /><br />
+                    <ol>
+                        <li style="text-indent: 2em; line-height: 2em; font-weight: bold">1.排名1</li>
+                        <li style="text-indent: 2em; line-height: 2em; font-weight: bold"> 2.排名2</li>
+                        <li style="text-indent: 2em; line-height: 2em; font-weight: bold">3.排名3</li>
+                    </ol>
+                    <table width="750">
+                        下面是一个表格
+                        <tr>
+                            <th>表头</th>
+                            <th>表头</th>
+                            <th>表头</th>
+                        </tr>
+                        <tr>
+                            <td>表内单元格</td>
+                            <td>表内单元格</td>
+                            <td><a href="javascript:;">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内单元格</td>
+                            <td>表内单元格</td>
+                            <td><a href="javascript:;">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内单元格</td>
+                            <td>表内单元格</td>
+                            <td><a href="javascript:;">操作</a></td>
+                        </tr>
+                        <tr>
+                            <td>表内单元格</td>
+                            <td>表内单元格</td>
+                            <td><a href="javascript:;">操作</a></td>
+                        </tr>
+                        <tr id="last">
+                            <td>总数</td>
+                            <td> 1000</td>
+                            <td></td>
+
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <div id="right">
+                <h4>这里以后是个侧栏,这是侧栏的标题</h4>
+
+                <form>
+                    <div class="content">请输入邮箱地址</div><div class="input"><input type="text" placeholder="这是一个文本输入框" /></div>
+                </form>
+                <div><span style="color: #ccc; font-size: 12px;text-align: center;padding: 0 30px 0 140px">邮箱地址请按格式要求输入</span></div>
+                <form><div class="content">请输入密码</div><div class="input"> <input type="password" value="123456" /></div></form>
+                <form><div class="content">请重复输入密码</div><div class="input"><input type="password" value="123456" /></div></form>
+                <div><span style="color: #ccc; font-size: 12px; text-align: center;padding: 0 30px 0 140px">密码为6-16位英文数字</span></div>
+                <div class="content">性别</div>
+                <div class="input">
+                    <input type="radio" name="radiogender" value="男" checked="checked" />男
+                    <input type="radio" name="radiogender" value="女" />女
+                </div><br />
+                <div class="content">城市</div>
+                <div class="input">
+                    <form>
+                        <select>
+                            <option value="北京" slected="slected">北京</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="content">爱好</div>
+                <div class="input">
+                    <input type="checkbox" name="checkbox1" value="运动" checked="checked" />运动
+                    <input type="checkbox" name="checkbox2" value="艺术" />艺术
+                    <input type="checkbox" name="checkbox3" value="科学" />科学
+                </div>
+                <div class="content">个人描述</div>
+                <div class="input">
+                    <form>
+                        <textarea cos="50" rows="10" placeholder="这是一个多行输入框,输入您的个人描述" ></textarea>
+                    </form>
+                </div>
+                <div id="submit"><input class="btn" type="submit" value="确认提交"  /></div>
+
+            </div>
+
+
+
+        </div>
+        <div class="foot"><span style="top: 20px;">版权所有@</span></div>
+    </div>
+</body>
+
+</html>

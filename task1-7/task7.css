@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header-left {
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+    .header-left img {
+        width: 31px;
+        height: 31px;
+        display: inline-block;
+    }
+
+    .header-left h1 {
+        font-size: 21px;
+        display: inline-block;
+    }
+
+.header-right {
+    margin-right: 50px;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+
+    .header-right li {
+        font-size: 14px;
+        font-family: mocrosoft yahei;
+        list-style-type: none;
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .header-right ul, img, span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .header-right span{     
+        color: red;
+      cursor:pointer; 
+    }
+
+    .header-right li:hover {
+        color: red;
+        border-bottom: 5px solid red;
+        height: 75px;
+    }
+
+.section-1 {
+    width: 100%;
+    height: 690px;
+    background-image: url(image/section1-pic01.png);
+    position: relative;
+    font-family: Microsoft YaHei;
+}
+
+    .section-1 h2 {
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top: 230px;
+        left: 117px;
+    }
+
+    .section-1 p {
+        font-size: 21px;
+        color: #fffdfd;
+        position: absolute;
+        top: 310px;
+        left: 115px;
+    }
+
+    .section-1 span {
+        width: 330px;
+        height: 65px;
+        font-size: 30px;
+        line-height: 65px;
+        color: white;
+        background: #ff6666;
+        text-align: center;
+        position: absolute;
+        top: 430px;
+        left: 117px;    
+    }
+
+.section-2 {
+    width: 100%;
+}
+
+    .section-2 .part {
+        float: left;
+        width: 320px;
+        height: 250px;
+        margin: 45px 0;
+    }
+
+        .section-2 .part .image img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .section-2 .part .mes {
+            text-align: center;
+            height: 45px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 50px;
+            color: #828383;
+            border-right: 2px solid #aaaaaa;
+        }
+
+    .section-2:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+.section-3 {
+    width: 100%;
+    height: 360px;
+    background: #edecec;
+}
+
+    .section-3 img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+
+    .section-3 p {
+        text-align: center;
+        color: #a1a1a1;
+        font-size: 54px;
+        margin-top: 50px;
+        font-family: SimHei;
+    }
+
+.section-4 {
+    width: 100%;
+    height: 340px;
+    background-image: url(image/section4-pic01.png);
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+    .section-4 .mes1 {
+        font-size: 21px;
+        font-family: Microsoft YaHei;
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 500px;
+    }
+
+    .section-4 span {
+        width: 31px;
+        height: 3px;
+        background: white;
+        position: absolute;
+        top: 85px;
+        left: 600px;
+    }
+
+    .section-4 .mes2 {
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 450px;
+    }
+
+  
+           .slected {
+                text-align: center;
+                 position: absolute;
+                 top:50%;
+                 width: 100%;
+                 border-color:white;
+               }
+                select, input {
+                    display: inline-block;
+                    width:150px;
+                    height:35px;
+                }
+                select {
+                    margin-left: 30px;
+                    option {
+                        color: #a8aaaa;
+                        &:first-of-type {
+                            display: none;
+                        }
+                    }
+                }
+               input{
+                    width: 200px;
+                    height: 35px;
+                    border: none;
+                    font: 14px/1 "Microsoft YaHei", Tahoma, Helvetica, Arial, sans serif;
+                    text-indent: 2em;
+                    letter-spacing: 2em;
+                    color: #fff;
+                    background: #be4e48;
+                    &:hover {
+                        cursor: pointer;
+                        background: #e8504f;
+                    }
+                
+    }
+
+ 
+    
+       
+
+.section-5 {
+    width: 100%;
+    height: 605px;
+    background: #f7f7f7;
+    margin: 0;
+    border: 1px solid #f7f7f7;
+}
+
+
+    .section-5 .div {
+        float: left;
+    }
+
+    .section-5 .container {
+        width: 1064px;
+        height: 340px;
+        margin: 100px 148px 110px 148px;
+    }
+
+    .section-5 .part {
+        width: 220px;
+        height: 390px;
+        float: left;
+        margin: 0 19px;
+        float: left;
+    }
+
+
+
+        .section-5 .part img {
+            width: 220px;
+            height: 340px;
+        }
+
+    .section-5 .pra-1, .pra-5, .pra-7 {
+        font-size: 16px;
+        color: black;
+        font-family: SimHei;
+        text-align: center;
+    }
+
+    .section-5 .pra-2, .pra-4, .pra-6, .pra-8 {
+        font-size: 14px;
+        color: #9f9f9f;
+        font-family: SimHei;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .section-5 .pra-3 {
+        font-size: 22px;
+        color: #323333;
+        font-family: SimHei;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 30px;
+    }
+
+.section-6 {
+    width: 100%;
+    height: 567px;
+    font-family: Microsoft YaHei;
+    position: relative;
+}
+
+.part-left {
+    width: 850px;
+    height: 567px;
+    background-image: url(image/section6-pic01.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+    .part-left .mes1 {
+        font-size: 50px;
+        color: white;
+        padding-top: 120px;
+        text-align: center;
+    }
+
+    .part-left .mes2 {
+        font-size: 158px;
+        color: white;
+        margin-top: -30px;
+        font-family: SimHei;
+    }
+
+    .part-left .mes3 {
+        font-size: 22px;
+        color: white;
+        font-family: Microsoft YaHei;
+        margin-top: -16px;
+        text-align: center;
+    }
+
+    .part-left .mes4 {
+        font-size: 22px;
+        color: white;
+        font-family: Microsoft YaHei;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+.part-right {
+    width: 430px;
+    height: 567px;
+    position: absolute;
+    margin-left: 851px;
+    margin-top: -360px;
+    text-align: center;
+}
+
+    .part-right h2 {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+        .part-right h2 span {
+            color: #e8504e;
+            font-weight: bold;
+        }
+
+    .part-right p {
+        height: 155px;
+        width: 290px;
+        font-size: 12px;
+        color: #aaaaaa;
+        font-family: SimSun;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .part-right .mes6, .mes7 {
+        display: none;
+    }
+
+    .part-right .more {
+        height: 35px;
+        width: 107px;
+        font-size: 12px;
+        color: #e25c60;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid #e25c60;
+    }
+
+.section-7 {
+    width: 100%;
+}
+
+.left {
+    width: 426PX;
+    height: 525px;
+    background: #e74f4d;
+    color: white;
+    float: left;
+    text-align: center;
+}
+
+    .left .cantainer1 {
+        width: 150px;
+        height: 170px;
+        margin-top: 175px;
+        margin-left: 128px;
+    }
+
+    .left p {
+        font-size: 21px;
+        font-family: SimHei;
+        margin-top: 30px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .left span {
+        width: 31px;
+        height: 3px;
+        background: white;
+    }
+
+    .left .more {
+        width: 170px;
+        height: 45px;
+        border: 1px solid white;
+        font-size: 21px;
+        font-family: SimHei;
+        margin: 0 auto;
+        line-height: 45px;
+        margin-top: 20px;
+    }
+
+.middle {
+    width: 426PX;
+    height: 525px;
+    color: black;
+    float: left;
+    text-align: center;
+}
+
+.cantainer2 {
+    width: 150px;
+    height: 170px;
+    margin-top: 175px;
+    margin-left: 128px;
+}
+
+.middle p {
+    font-size: 21px;
+    font-family: SimHei;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.5em;
+    color: #323333;
+}
+
+.middle span {
+    width: 31px;
+    height: 3px;
+    background: #aaaaaa;
+}
+
+.middle .more {
+    width: 170px;
+    height: 45px;
+    border: 1px solid #e74f4d;
+    font-size: 21px;
+    font-family: SimHei;
+    color: #e74f4d;
+    line-height: 45px;
+    margin-top: 20px;
+}
+
+.right {
+    width: 426px;
+    height: 520px;
+    background: url(image/siction7-pic01.png);
+    background-repeat: no-repeat;
+    float: right;
+}
+
+    .right:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+.section8 {
+    width: 100%;
+}
+
+.section8-top {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    padding-top: 50%;
+}
+
+    .section8-top h3 {
+        font-size: 21px;
+        color: #323333;
+        font-family: SimHei;
+        font-weight: bold;
+    }
+
+    .section8-top span {
+        width: 31px;
+        height: 3px;
+        background: #ea6663;
+    }
+
+    .section8-top p {
+        font-size: 12px;
+        color: #aaaaaa;
+        font-family: Microsoft YaHei;
+        line-height: 2em;
+    }
+
+.section8-left {
+    width: 290px;
+    height: 290px;
+    float: left;
+    margin: -100px 20px 150px 50px;
+    text-align: left;
+}
+
+    .section8-left p {
+        width: 290px;
+        line-height: 2em;
+        font-size: 12px;
+        color: #bcbbba;
+    }
+
+    .section8-left h6 {
+        width: 290px;
+        color: #8c8989;
+        font-size: 14px;
+        margin: 30px 0;
+    }
+
+.section8-right {
+    width: 660px;
+    height: 300px;
+    float: left;
+     color: #8d8a8b;
+    margin: -100px 20px 150px 138px;
+}
+
+
+.name, .age, .phone-Number, .address {
+    width: 310px;
+    height: 41px;
+    background: #ececee;
+    border: 0;
+    text-indent: 1.5em;
+    font-size: 12px;
+    margin: 8px;
+    font-size: 12px;
+    color: #8d8a8b;
+    display: inline-block;
+    letter-spacing:1px;
+}
+
+.description {
+    width: 640px;
+    height: 120px;
+    background: #ececee;
+    border: 0;
+    text-indent: 1.5em;
+    font-size: 12px;
+    margin: 8px;
+    font-size: 12px;
+    color: #8d8a8b;
+    padding-top: 0;
+    letter-spacing:1px;
+        
+}
+
+.submit {
+    width: 640px;
+    height: 40px;
+    background: #ececee;
+    border: 0;
+    text-indent: 1.5em;
+    font-size:14:14 6/2/2017 星期一14:14 6/2/2017 星期一14:14 6/2/2017 星期一14:14 6/2/2017 星期一14px;
+    margin: 8px;
+    font-size: 12px;
+    color: #8d8a8b;
+   
+}
+
+.footer {
+    width: 100%;
+}
+
+.contact {
+    height: 360px;
+    background: #32363e;
+    text-align: center;
+    clear: both;
+}
+
+    .contact h6 {
+        padding-top: 90px;
+        font-size: 21px;
+        color: white;
+        font-family: SimHei;
+    }
+
+    .contact p {
+        padding-top: 6px;
+        font-size: 12px;
+        color: white;
+        font-family: SimSun;
+    }
+
+    .contact input {
+        height: 40px;
+        width: 430px;
+     
+        background: #ffffff;
+        margin: 30px 0 35px 0;
+        color: #aaaaaa;
+        font-size: 14px;
+        text-indent: 1em;
+       letter-spacing:1px;
+        
+    }
+
+    .contact button {
+        height: 43px;
+        width: 82px;
+        background: #6f7178;
+        margin-left: -7px;
+        border: 0;
+        color: white;
+        font-size: 15px;
+    }
+
+.links img {
+    padding: 0 10px;
+}
+
+.bottom {
+    height: 55px;
+    background: #2f2f38;
+     font-family: SimSun
+}
+
+.endding {
+    color: white;
+    font-size: 12px;
+   float:left;
+   margin-left:100px;
+   margin-top:30px;
+}
+.back {
+font-size: 12px;
+   float:right;
+    margin-top:30px;
+     margin-right:40px;
+     
+}
+.bottom a {
+    text-decoration: none;
+    color:white;
+    
+     
+}

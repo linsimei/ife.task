@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+.header {
+    width: 1280px;
+    height: 56px;
+    background: #2189bf;
+}
+.logo {
+     width:36px;
+    height: 36px;
+    margin-top: 9px;
+    margin-left: 50px;
+}
+.searchBar {
+    width: 310px;
+    height: 25px;
+    margin-bottom: 15px;
+    margin-left: 612px;
+    background: white;
+    border-radius: 25px;
+    
+}
+.login{
+    float: right;
+    margin-right: 94px;
+    line-height: 56px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.main {
+    width: 100%;
+
+}
+.main-left {
+     width: 260px;
+    height:1210px;
+    background: #2a2e3d;
+}

@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        通过html和css 模拟报纸
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #outer {
+            width: 980px;
+            margin-left: 40px;
+        }
+
+        #header {
+            width: 900px;
+            height: 60px;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+       #header:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+        .sub {
+            width: 110px;
+            height: 60px;
+            background: red;
+            color: white;
+            position: relative;
+            float: left;
+            vertical-align: bottom;
+            filter: alpha(opacity:50);
+            opacity: 0.5;            
+        }
+            .sub p {
+                position: absolute;
+                top: 40px;
+                left: 0;
+            }
+        .date {
+            width: 60px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-weight: bold;
+            color: red;                     
+        }
+        #mainbody {
+            width: 900px;
+            margin: 40px 0;
+            position: relative;
+        }
+         #top :after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+        .box1 {
+            width: 550px;
+            float: left;
+        }
+
+        .img1 {
+            width: 550px;
+            height: 250px;
+            padding: 0;
+        }
+
+        .below {
+            width: 600px;
+            padding: 10px;
+            filter: alpha(opacity=70);
+            opacity: 0.5;
+        }
+
+            .below:after {
+                clear: both;
+                content: ".";
+                display: block;
+                height: 0;
+                width: 0;
+                visibility: hidden;
+            }
+
+        .box11, .box12 {
+            width: 180px;
+        }
+
+        .box13 {
+            width: 160px;
+        }
+
+        .box11, .box12, .box13 {
+            float: left;
+            margin: 10px;
+        }
+
+        .green {
+            color: green;
+            text-decoration: underline;
+            margin: 10px;
+        }
+
+        .yellow {
+            color: #f0e68c;
+            text-decoration: underline;
+            margin: 10px;
+        }
+
+        .red {
+            color: red;
+            text-decoration: underline;
+            margin: 10px;
+        }
+
+        .box13 p {
+            margin: 5px 0;
+        }
+
+        .w_3 p {
+            margin: 10px 0;
+        }
+
+        .w_3 span {
+            color: red;
+        }
+
+        .box2 {
+            width: 240px;
+            border-top: 2px solid red;
+            position: absolute;
+            margin-left: 660px;
+            top: 0;
+            filter: alpha(opacity=70);
+            opacity: 0.5;
+        }
+
+        .mainbody:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+
+        .about span {
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .about {
+            font-size: 16px;
+            font-weight: 700;
+            width: 50px;
+            border-bottom: 2px solid black;
+            margin: 10px 0 0 5px;
+            letter-spacing: 1.5px;
+        }
+
+        .technologe span {
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .technologe {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 10px 0 0 5px;
+            letter-spacing: 1.5px;
+            width: 100px;
+            border-bottom: 2px solid black;
+        }
+
+        .abouts {
+            font-size: 14px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .big700 {
+            font-size: 130px;
+            color: green;
+            font-style: italic;
+        }
+
+        .smaller {
+            font-size: 50px;
+            color: #8b0000;
+            float: left;
+        }
+
+        .css span {
+            font-size: 16px;
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .css {
+            padding: 15px 0 0 10px;
+            float: left;
+        }
+        .bottom {
+            width: 950px;
+           
+            margin-top: 5px;
+            position: relative;
+        }
+       
+
+       
+       .box3 {
+           width: 450px;
+           
+       }
+      
+        .title1 {
+            border-bottom: 2px solid slategrey; 
+        }
+         .title1 p span{
+             font-size: 250%;
+             color: #f0e68c;
+             font-weight: bold;
+        }
+         .title1 p {
+             font-size: 220%;            
+             font-weight: bold;
+             color: slategrey;
+             padding-bottom:5px;
+              
+        }       
+        
+         .content1::first-letter {
+              font-size: 300%;
+             color: #ffd700;
+             font-weight: bold;
+         }
+         
+         .img2 {
+             width: 200px;
+             height: 300px;
+             float: right;
+             padding: 15px;           
+         }
+         .pra_two,.pra_three {
+             text-indent: 2em;
+             filter: alpha(opacity=40);
+            opacity: 0.4;
+         }
+         .pra_one {
+             filter: alpha(opacity=40);
+            opacity: 0.4;
+         }
+         .box4{
+         width:400px;	
+	  
+             position: absolute;
+             margin-left: 470px;
+            margin-top: -700px;
+
+            
+         }
+        .img_three {
+             width: 400px;
+            height: 300px;
+           
+        }
+         .one {
+            width: 400px;
+              height: 300px;
+              position:relative
+        }
+         .two {
+             width: 400px;
+              height: 80px;
+             filter: alpha(opacity:70);
+             opacity: 0.7;
+             position:absolute;z-index: 2;top: 220px; 
+             background: #d3d3d3;
+             color: green;
+         }
+      .section_last {
+          width: 400px;
+          margin: 20px 0 15px 5px;
+            background: #eeedd6;
+      }
+      .triangle{
+	 width: 0;
+	 height: 0;
+	 border-left:5px solid transparent;
+	 border-right: 5px solid transparent;
+	 border-bottom: 10px solid #10456b;
+	 display: inline-block;
+}
+      .middle {
+          width: 400px;
+          padding: 25px;
+        
+      }
+       .middle p {
+
+           line-height:3em;
+            filter: alpha(opacity:50);
+            opacity: 0.5;  
+      }
+       .img4 {
+           width: 200px;
+           height: 180px;
+           float: left;
+            margin-right: 10px;
+          
+       }
+       .section_last:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+       .words {
+           font-size: 14px;
+           font-style: italic;
+           line-height: 2em;
+           margin-left: 10px;
+           font-weight: bold;
+            filter: alpha(opacity:50);
+            opacity: 0.5;           
+       }
+        .words span {
+        font-size: 30px;
+            color: red;
+            font-weight: 900;
+            
+        }
+        #foot {
+            width: 900px;
+            height: 100px;
+            border-top: 2px solid #cccccc;
+            position: relative;
+        }
+        .footer{ 
+            color: red;
+            position: absolute;
+            right: 0;
+
+        }
+           
+
+        
+
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="header">
+            <div class="sub">
+                <p>ife.baidu.com</p></div>
+            <div class="date">2016.03</div>
+        </div>
+        <div id="mainbody">
+            <div id="top">
+                <div class="box1">
+                    <img src="pic-one.png" class="=img1" />
+                    <div class="below">
+                        <div class="box11">
+                            <h2 class="green">What</h2>
+                            <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                        </div>
+                        <div class="box12">
+                            <h2 class="yellow">When</h2>
+                            <p>前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                        </div>
+                        <div class="box13">
+                            <h2 class="red">How</h2>
+                            <p>前端前端前端</p>
+                            <p>前端前端前端前端</p>
+                            <p>前端前端前端</p>
+                            <div class="w_3">
+                                <p>What-------<span>40%</span></p>
+                                <p>What-------<span>30%</span></p>
+                                <p>What-------<span>30%</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <p class="about">
+                        <span>A</span>BOUT
+                    </p>
+                    <p class="technologe">
+                        <span>T</span>ECHNOLOGE
+                    </p>
+                    <p class="abouts">
+                        About technologe about technologe about technologe
+                    </p>
+                    <p class="big700">700</p>
+                    <div class="smaller">3.2</div>
+                    <div class="css">
+                        <p><span>CSS</span></p>
+                        <p>csscsscsscss</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <div class="box3">
+                    <div class="title1">
+                        <P>
+                            <span> THE </span> TECHNOLOGE OF FRONT
+                        </P>
+                        <P>前端技术领域</P>
+                    </div>
+                    <div class="content1">
+
+                        <p class="pra_one">
+                            前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前
+                            前端前端前端前端前端前端前端前端前端前端前端前端前端端端前
+                        </p>
+                        <img class="img2" src="pic-two.png" />
+                        <p class="pra_two">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                        <p class="pra_three">端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前前端端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端</p>
+                    </div>
+                </div>
+
+                <div class="box4">
+                    <div class="one" >
+                        <img class="img_three" src="pic-three.jpg"/>
+                        <div class="two" > <span tyle="font-size: 10px;font-weight: bold; ">|</span><span style="font-size: 40px; font-weight: bold;  color: white;"> 前端技术  </span><span style="font-style:italic;">前端技术前端技术</span></div>
+                    </div>
+                    <div class="section_last">
+                        <div class="middle" >
+                            <P><span class="triangle"></span>前端前端前端前端前端前端..............前端</P>
+                            <P><span class="triangle"></span>前端前端前端前端.....................前端前</P>
+                            <P><span class="triangle"></span>前端前端前端前端前端前端前端..........前端</P>
+                        </div>
+
+                        <img class="img4" src="pic-four.png" />
+                        <div class="words"><span>"</span>world hello world hello world hello world hello world hello world hello world hello world hello world hello world <span>"</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+           <p class="footer" p>ife.baidu.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
