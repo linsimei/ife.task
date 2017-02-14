@@ -33,7 +33,7 @@
         */
 
         (function () {
-            for (var i = 0; i < aqiData.length; i++) {
+            for (var i in aqiData) {
                 if (aqiData[i][1] > 60) {
                     var li = document.createElement("li");
                     li.innerHTML = aqiData[i][0] + "," + aqiData[i][1];
