@@ -1,0 +1,51 @@
+/*reset*/
+ body {
+            font-family: "Microsoft YaHei";
+            /*background: #f9f9f9;*/
+            color: #000;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        body,div
+        ul,
+        ol,
+        dl,
+        dt,
+        dd,
+        li,
+        img,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        article,
+        section,
+        select,
+        option,
+        b,
+        p,
+        i,
+        input,
+        button,
+        span,
+        font,
+        a {
+            margin: 0px;
+            padding: 0px;
+            border: none;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
